@@ -1,0 +1,7 @@
+<FlexboxLayout justifyContent="center" alignItems="center" class="wear-face full-height">
+  <StackLayout (pan)="relocate()">
+    <Label text="75 %" textAlignment="center"></Label>
+    <Label [text]="time" class="clock" textAlignment="center"></Label>
+    <Label [text]="day" textAlignment="center"></Label>
+  </StackLayout>
+</FlexboxLayout>

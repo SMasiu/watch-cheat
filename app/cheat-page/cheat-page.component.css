@@ -1,0 +1,14 @@
+/* Add mobile styles for the component here.  */
+.header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bullet {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.list {
+    padding-left: 10px;
+}

@@ -7,8 +7,12 @@
 
 android {  
   defaultConfig {  
+    minSdkVersion 23
+    targetSdkVersion 23
+    versionCode 1
+    versionName "1.0"
     generatedDensities = []
-    applicationId = "__PACKAGE__" 
+    applicationId = "org.nativescript.cheatapp" 
     
     //override supported platforms
     // ndk {

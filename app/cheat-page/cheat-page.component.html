@@ -1,0 +1,24 @@
+<ScrollView scrollBarIndicatorVisible="false">
+    <StackLayout [ngStyle]="{'padding': layout.getPadding()}">
+        <StackLayout *ngFor="let item of cheatContent">
+            <StackLayout [ngSwitch]="item.type">
+
+                <ng-template [ngSwitchCase]="'p'">
+                    <Label [text]="item.value" class="paragraph"></Label>
+                </ng-template>
+
+                <ng-template [ngSwitchCase]="'header'">
+                    <Label [text]="item.value" textAlignment="center" class="header"></Label>
+                </ng-template>
+
+                <ng-template [ngSwitchCase]="'list'">
+                    <FlexboxLayout class="list" *ngFor="let val of item.value; index as i;">
+                        <Label [text]="formatListIterator(i)" class="bullet"></Label>
+                        <Label [text]="val"></Label>
+                    </FlexboxLayout>
+                </ng-template>
+
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
