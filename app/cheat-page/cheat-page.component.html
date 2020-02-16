@@ -1,4 +1,4 @@
-<ScrollView scrollBarIndicatorVisible="false">
+<ScrollView scrollBarIndicatorVisible="false" (scroll)="onScroll($event)" #ScrollList>
     <StackLayout [ngStyle]="{'padding': layout.getPadding()}">
         <StackLayout *ngFor="let item of cheatContent">
             <StackLayout [ngSwitch]="item.type">

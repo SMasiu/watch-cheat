@@ -12,8 +12,9 @@ export class BoxInsetLayoutService {
   padding: number = 0;
   innerWidth: number = 0;
 
+  lastScrollY: number = 0;
+
   constructor() {
-    console.log('calc')
     this.screenWidth = screen.mainScreen.widthPixels;
     this.screenHeight = screen.mainScreen.heightPixels;
 
